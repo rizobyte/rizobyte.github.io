@@ -93,6 +93,19 @@ body {
 	.hdbg {
 		height: 150px;
 	}
+
+	.card {
+		background-color: #424242;
+		border-radius: 10px;
+		margin: 10px 20px;
+	}
+
+	.mainbody {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 @media screen and (orientation: portrait) {
@@ -125,4 +138,44 @@ body {
 	.hdbg {
 		height: 220px;
 	}
+
+	.card {
+		background-color: #424242;
+		border-radius: 10px;
+		margin: 10px 10px;
+	}
+
+	.mainbody {
+		margin: 0px 10px;
+	}
+
+}
+
+.card .name {
+	font-family: ubuntu;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+	margin: 0px 5px;
+}
+
+.card .download {
+	text-align: center;
+	margin: 0px 5px;
+	margin-bottom: 3px;
+}
+
+.ctr {
+	text-align: center;
+}
+
+.link {
+	font-family: ubuntu;
+	text-decoration: none;
+	color: gold;
+	transition: .5s;
+}
+
+.link:hover {
+	color: white;
 }
