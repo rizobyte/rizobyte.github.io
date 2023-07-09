@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="files/pic/ai.png">
+    <title>AiLoop</title>
+    <link rel="stylesheet" href="css/ailoop.css">
+	<link rel="stylesheet" href="https://rizobyte.github.io/font-base/fonts.css">
+</head>
+
+<style>
+</style>
+
+<body>
+
+    <div class="menu" id="menu">
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <h3 style="user-select: none; cursor: pointer; margin: 5px;" onclick="closemenu()"><img
+                    src="files/pic/icons/close.svg"></h3>
+            <a style="background-color: gold; justify-content: center; display: flex; align-items: center; font-family: ubuntu; margin: 5px; padding: 0px 3px; font-size: 17px; color: black; text-decoration: none;"
+                href="" id="src" target="_blank"><img src="files/pic/icons/zoom_in.svg"> Open in new tab</a>
+        </div>
+        <img id="img" style="width: 90%;">
+        <div class="prompt" id="promptbase">
+            <p class="prompt-class">prompt:<mark class="prompt-text" id="prompt"></mark></p>
+            <p class="prompt-class">negative prompt:<mark class="prompt-text" id="nprompt"></mark></p>
+            <p class="prompt-class">sampler:<mark class="prompt-text" id="sampler"></mark></p>
+            <p class="prompt-class">seed:<mark class="prompt-text" id="seed"></mark></p>
+            <p class="prompt-class">steps:<mark class="prompt-text" id="steps"></mark></p>
+            <p class="prompt-class">cfg scale:<mark class="prompt-text" id="cfgscale"></mark></p>
+            <p class="prompt-class">resolution:<mark class="prompt-text" id="res"></mark></p>
+            <p class="prompt-class">lora:<mark class="prompt-text" id="lora"></mark></p>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1 style="font-family: hemihead; color: gold;">AiLoop</h1>
+    </header>
+
+    <div style="display: flex; justify-content: center; position: fixed; width: 100%;">
+        <div class="imgs" onclick="index = 0, table()">
+            <h2>Table
+                <hr>28.06.2023
+            </h2>
+        </div>
+        <div class="imgs" onclick="index = 1, table()">
+            <h2>Table
+                <hr>06.05.2023
+            </h2>
+        </div>
+        <div class="imgs" onclick="index = 2, table()">
+            <h2>Table
+                <hr>08.04.2023
+            </h2>
+        </div>
+        <div class="imgs" onclick="index = 3, table()">
+            <h2>Table
+                <hr>25.02.2023
+            </h2>
+        </div>
+    </div>
+    <div class="hdbg"></div>
+
+    <div style="justify-content: center; align-items: center; display: flex; flex-direction: row;">
+        <div class="card"></div>
+    </div>
+</body>
+
+<script src="script/ailoop_base.js"></script>
+<script>
+    var menu = document.getElementById('menu');
+    var src = document.getElementById('src');
+    var promptbase = document.getElementById('promptbase');
+    var img = document.getElementById('img');
+    var prompt = document.getElementById('prompt');
+    var nprompt = document.getElementById('nprompt');
+    var sampler = document.getElementById('sampler');
+    var seed = document.getElementById('seed');
+    var steps = document.getElementById('steps');
+    var cfgscale = document.getElementById('cfgscale');
+    var res = document.getElementById('res');
+    var lora = document.getElementById('lora');
+
+
+    function openpic(e) {
+        var url = e.target.src.slice(0);
+        window.open(url, '_blank');
+    }
+
+    function closemenu() {
+        menu.style.zIndex = -1;
+        menu.style.opacity = 0;
+    }
+
+    function table() {
+        menu.style.zIndex = 3;
+        menu.style.opacity = 1;
+        if (index === 3) {
+            img.src = ailoop[index].img;
+            src.href = ailoop[index].img;
+            promptbase.style.zIndex = '-1';
+            promptbase.style.opacity = '0';
+            img.style.width = '30%';
+        } else {
+            promptbase.style.zIndex = '3';
+            promptbase.style.opacity = '1';
+            img.style.width = '90%';
+            img.src = ailoop[index].img;
+            src.href = ailoop[index].img;
+            prompt.textContent = ailoop[index].prompt;
+            nprompt.textContent = ailoop[index].nprompt;
+            sampler.textContent = ailoop[index].sampler;
+            seed.textContent = ailoop[index].seed;
+            steps.textContent = ailoop[index].steps;
+            cfgscale.textContent = ailoop[index].cfgscale;
+            res.textContent = ailoop[index].res;
+            lora.innerHTML = ailoop[index].lora;
+        }
+    }
+</script>
+
+</html>
