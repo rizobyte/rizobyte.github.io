@@ -44,35 +44,35 @@
 		color: white;
 	}
 
-	.name:hover {
-		animation-duration: 2s;
-		animation-name: name;
-		animation-iteration-count: infinite;
+	.background {
+		background-image: url(img/osaka.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
 	}
 
-
-	@keyframes name {
-		0% {
-			color: white;
-		}
-
-		50% {
-			color: #39b54a;
-		}
-
-		100% {
-			color: white;
-		}
+	.color {
+		background-color: #00000088;
+		z-index: 1;
+		width: 100%;
+		position: fixed;
+		height: 100%;
 	}
 </style>
 
 <body>
 	<main style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
-		<div style="display: flex; align-items: center; justify-content: center;">
+		<div class="background"></div>
+		<div class="color"></div>
+		<div style="display: flex; align-items: center; justify-content: center; z-index: 2;">
 			<img src="img/rizobyte.png" style="width: 82px;">
 			<h1 class="name">rizobyte</h1>
 		</div>
-		<div style="text-align: center;">
+		<div style="text-align: center; z-index: 2;">
 			<a href="https://rizobyte.github.io/HFA" target="_blank">HFA</a>
 			<a href="https://rizobyte.github.io/ailoop" target="_blank">AILOOP</a>
 			<a href="https://rizobyte.github.io/dmca" target="_blank">DMCA</a>
