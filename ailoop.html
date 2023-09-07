@@ -32,7 +32,7 @@
             <p class="prompt-class">steps:<mark class="prompt-text" id="steps"></mark></p>
             <p class="prompt-class">cfg scale:<mark class="prompt-text" id="cfgscale"></mark></p>
             <p class="prompt-class">resolution:<mark class="prompt-text" id="res"></mark></p>
-            <p class="prompt-class">lora:<mark class="prompt-text" id="lora"></mark></p>
+            <p class="prompt-class" id="loras">lora:<mark class="prompt-text" id="lora"></mark></p>
         </div>
     </div>
 
@@ -43,20 +43,25 @@
     <div style="display: flex; justify-content: center; position: fixed; width: 100%;">
         <div class="imgs" onclick="index = 0, table()">
             <h2>Table
-                <hr>28.06.2023
+                <hr>07.09.2023
             </h2>
         </div>
         <div class="imgs" onclick="index = 1, table()">
             <h2>Table
-                <hr>06.05.2023
+                <hr>28.06.2023
             </h2>
         </div>
         <div class="imgs" onclick="index = 2, table()">
             <h2>Table
-                <hr>08.04.2023
+                <hr>06.05.2023
             </h2>
         </div>
         <div class="imgs" onclick="index = 3, table()">
+            <h2>Table
+                <hr>08.04.2023
+            </h2>
+        </div>
+        <div class="imgs" onclick="index = 4, table()">
             <h2>Table
                 <hr>25.02.2023
             </h2>
@@ -109,6 +114,7 @@
     var cfgscale = document.getElementById('cfgscale');
     var res = document.getElementById('res');
     var lora = document.getElementById('lora');
+    var loras = document.getElementById('loras');
 
 
     function openpic(e) {
@@ -143,7 +149,12 @@
             steps.textContent = ailoop[index].steps;
             cfgscale.textContent = ailoop[index].cfgscale;
             res.textContent = ailoop[index].res;
-            lora.innerHTML = ailoop[index].lora;
+            if (index === 1) {
+                loras.style.display = "block";
+                lora.innerHTML = ailoop[index].lora;
+            } else {
+                loras.style.display = "none";
+            }
         }
     }
 </script>
