@@ -3,6 +3,16 @@
 const ailoop = [
 
     {
+        img: 'img/tables/table1.png',
+        prompt: ' masterpiece, best quality, 1girl, closed eyes, upper body, splashing, abstract, psychedelic, neon, (honeycomb pattern), (creative:1.3)',
+        nprompt: ' <a href="https://civitai.com/models/71961?modelVersionId=94057" class="prompt-class" target="_blank">FastNegativeV2</a>',
+        sampler: ' DPM++ SDE Karras',
+        seed: ' 1568717013',
+        steps: ' 30',
+        cfgscale: ' 7',
+        res: ' 512x768',
+    },
+    {
         img: 'img/tables/newtabl1.png',
         prompt: ' (masterpiece:1.2), (best quality:1.2), perfect eyes, perfect face, 1girl, <lora:suchka:0.6>, suchka, monochrome, half body, bunny suit',
         nprompt: ' ((poorly drawn face)), (worst quality, low quality:1.4), bad face, normal quality, low res, extra fingers, mutated fingers, extra hands, extra legs, text, nickname, blur',
@@ -22,7 +32,6 @@ const ailoop = [
         steps: ' 30',
         cfgscale: ' 7',
         res: ' 512x768',
-        lora: ' ---',
     },
     {
         img: 'img/tables/tabl.jpg',
@@ -33,7 +42,6 @@ const ailoop = [
         steps: ' 30',
         cfgscale: ' 7',
         res: ' 512x768',
-        lora: ' ---',
     },
     {
         img: 'img/tables/shema.jpg'
