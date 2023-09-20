@@ -14,7 +14,7 @@
 <style>
 </style>
 
-<body>
+<body style="overflow-y: hidden;">
 
     <div class="menu" id="menu">
         <div style="display: flex; justify-content: center; align-items: center;">
@@ -36,71 +36,109 @@
         </div>
     </div>
 
-    <header class="header">
-        <h1 style="font-family: hemihead; color: gold;">AiLoop</h1>
+    <header id="header">
+        <h1 style="font-family: poiretone; color: white;">AiLoop</h1>
     </header>
 
-    <div style="display: flex; justify-content: center; position: fixed; width: 100%;">
-        <div class="imgs" onclick="index = 0, table()">
-            <h2>Table
-                <hr>07.09.2023
-            </h2>
-        </div>
-        <div class="imgs" onclick="index = 1, table()">
-            <h2>Table
-                <hr>28.06.2023
-            </h2>
-        </div>
-        <div class="imgs" onclick="index = 2, table()">
-            <h2>Table
-                <hr>06.05.2023
-            </h2>
-        </div>
-        <div class="imgs" onclick="index = 3, table()">
-            <h2>Table
-                <hr>08.04.2023
-            </h2>
-        </div>
-        <div class="imgs" onclick="index = 4, table()">
-            <h2>Table
-                <hr>25.02.2023
-            </h2>
-        </div>
-    </div>
-    <div class="hdbg"></div>
+    <main id="main">
 
-    <div class="mainbody">
-        <div class="card">
-            <h2 class="name">KoreanDollLikenes 1.5</h2>
-            <h3 class="ctr"><a class="link" target="_blank"
-                    href="https://www.virustotal.com/gui/file/22885a3acd2a5ed0c669ae20752f41ef5526f2ea490830846a01da4e2de6d387">VirusTotal</a>
-            </h3>
-            <h2 class="download"><a class="link" target="_blank"
-                    href="https://drive.google.com/uc?export=download&id=1Z_wIZ4c0I-GWeADIPNqaQn1ZIkBVG1EL">download</a>
-            </h2>
+        <header style="height: 60px;">
+        </header>
+
+        <div style="display: flex; justify-content: center; width: 100%; height: 200px;">
+            <div class="imgs" onclick="index = 0, table()">
+                <h2>Table
+                    <hr>07.09.2023
+                </h2>
+            </div>
+            <div class="imgs" onclick="index = 1, table()">
+                <h2>Table
+                    <hr>28.06.2023
+                </h2>
+            </div>
+            <div class="imgs" onclick="index = 2, table()">
+                <h2>Table
+                    <hr>06.05.2023
+                </h2>
+            </div>
+            <div class="imgs" onclick="index = 3, table()">
+                <h2>Table
+                    <hr>08.04.2023
+                </h2>
+            </div>
+            <div class="imgs" onclick="index = 4, table()">
+                <h2>Table
+                    <hr>25.02.2023
+                </h2>
+            </div>
         </div>
-        <div class="card">
-            <h2 class="name">TaiwanDollLikenes 1.0</h2>
-            <h3 class="ctr"><a class="link" target="_blank"
-                    href="https://www.virustotal.com/gui/file/5bbaabc04553d5821a3a45e4de5a02b2e66ecb00da677dd8ae862efd8ba59050">VirusTotal</a>
-            </h3>
-            <h2 class="download"><a class="link" target="_blank"
-                    href="https://drive.google.com/uc?export=download&id=158Uo4WWDbTHwtGPS9x0-iAWXdcWxftFs">download</a>
-            </h2>
+
+        <div class="mainbody">
+            <div class="card">
+                <h2 class="name">KoreanDollLikenes 1.5</h2>
+                <h3 class="ctr"><a class="link" target="_blank"
+                        href="https://www.virustotal.com/gui/file/22885a3acd2a5ed0c669ae20752f41ef5526f2ea490830846a01da4e2de6d387">VirusTotal</a>
+                </h3>
+                <h2 class="download"><a class="link" target="_blank"
+                        href="https://drive.google.com/uc?export=download&id=1Z_wIZ4c0I-GWeADIPNqaQn1ZIkBVG1EL">download</a>
+                </h2>
+            </div>
+            <div class="card">
+                <h2 class="name">TaiwanDollLikenes 1.0</h2>
+                <h3 class="ctr"><a class="link" target="_blank"
+                        href="https://www.virustotal.com/gui/file/5bbaabc04553d5821a3a45e4de5a02b2e66ecb00da677dd8ae862efd8ba59050">VirusTotal</a>
+                </h3>
+                <h2 class="download"><a class="link" target="_blank"
+                        href="https://drive.google.com/uc?export=download&id=158Uo4WWDbTHwtGPS9x0-iAWXdcWxftFs">download</a>
+                </h2>
+            </div>
+            <div class="card">
+                <h2 class="name">JapaneseDollLikenes 1.0</h2>
+                <h3 class="ctr"><a class="link" target="_blank"
+                        href="https://www.virustotal.com/gui/file/96928ce48667a5a6794c3bb2833f6f56bcc88dc6ebf53716d8a0f982a2fba81a">VirusTotal</a>
+                </h3>
+                <h2 class="download"><a class="link" target="_blank"
+                        href="https://drive.google.com/uc?export=download&id=1CcWwLMUXUWh6WMGlDVYQwUZCq2hdUQQb">download</a>
+                </h2>
+            </div>
         </div>
-        <div class="card">
-            <h2 class="name">JapaneseDollLikenes 1.0</h2>
-            <h3 class="ctr"><a class="link" target="_blank"
-                    href="https://www.virustotal.com/gui/file/96928ce48667a5a6794c3bb2833f6f56bcc88dc6ebf53716d8a0f982a2fba81a">VirusTotal</a>
-            </h3>
-            <h2 class="download"><a class="link" target="_blank"
-                    href="https://drive.google.com/uc?export=download&id=1CcWwLMUXUWh6WMGlDVYQwUZCq2hdUQQb">download</a>
-            </h2>
-        </div>
-    </div>
+
+        <footer>
+            <div style="display: flex; align-items: center;">
+                <a href="https://rizobyte.github.io" target="_blank" style="text-decoration: none;"><img
+                        src="img/rizobyte.png" style="width: 41px;">
+                </a>
+                <a href="https://rizobyte.github.io" target="_blank" style="text-decoration: none;">
+                    <h1 style="font-size: 25px; font-family: poiretone; color: white">rizobyte</h1>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://rizobyte.github.io/dmca" target="_blank" style="text-decoration: none;">
+                    <h1 style="font-size: 25px; font-family: poiretone; color: white;">DMCA</h1>
+                </a>
+            </div>
+        </footer>
+
+    </main>
 </body>
 
 <script src="script/ailoop_base.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(changeheader, 1500);
+    });
+
+    function changeheader() {
+        document.body.style.overflowY = "visible";
+        document.getElementById('header').style.height = "60px";
+        setTimeout(changebg, 1000);
+    }
+
+    function changebg() {
+        document.getElementById('main').style.opacity = "1";
+    }
+</script>
 <script>
     var menu = document.getElementById('menu');
     var src = document.getElementById('src');
