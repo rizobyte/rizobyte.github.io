@@ -51,7 +51,7 @@ footer {
 
 .prompt-class {
 	color: gold;
-	font-family: ubuntu;
+	font-family: Ubuntu-Medium;
 	background-color: #ffffff00;
 	transition: .5s;
 	user-select: none;
@@ -60,7 +60,7 @@ footer {
 .prompt-text {
 	background-color: #00000000;
 	color: white;
-	font-family: ubuntu;
+	font-family: Ubuntu-Medium;
 	padding: 0px 3px;
 }
 
@@ -166,7 +166,7 @@ footer {
 }
 
 .card .name {
-	font-family: ubuntu;
+	font-family: Ubuntu-Medium;
 	color: white;
 	text-align: center;
 	padding-top: 5px;
@@ -184,7 +184,7 @@ footer {
 }
 
 .link {
-	font-family: ubuntu;
+	font-family: Ubuntu-Medium;
 	text-decoration: none;
 	color: gold;
 	transition: .5s;
