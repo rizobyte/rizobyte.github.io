@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" sizes="192x192" href="img/rizobyte.png">
+	<title>rizobyte ai</title>
+	<meta name="description" content="новая глава ult11">
+	<link rel="stylesheet" href="https://rizobyte.github.io/font-base/fonts.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<meta name="google-site-verification" content="XxfzLzqaeiLblFIi1j6UH0TRHKTKKf4Id1bVw5Pi6TA" />
+</head>
+
+<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+		outline: 0;
+	}
+
+	html,
+	body {
+		height: 100%;
+		background-color: #1A1A1D;
+		background-image: url(img/aibg.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		user-select: none;
+	}
+
+	a {
+		color: #0099ff;
+		text-decoration: none;
+		font-family: PixelifySans-Regular;
+		font-size: 20px;
+		margin: 0px 10px;
+		transition: .5s;
+	}
+
+	a:hover {
+		color: #faac37;
+	}
+
+	.name {
+		font-size: 49px;
+		font-family: PixelifySans-Regular;
+		color: white;
+	}
+
+	@media screen and (orientation: landscape) {
+		.allprojects {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		main {
+			height: 100%;
+			background-color: #1A1A1D;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.project_info {
+			height: 450px;
+			width: 300px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			margin: 0px 15px;
+			background-color: #080813;
+			border-radius: 20px;
+			color: white;
+			border: 3px solid rgba(255, 255, 255, 0.5);
+		}
+
+		#ourprojects {
+			color: white;
+			text-align: center;
+			font-family: ubuntu-regular;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (orientation: portrait) {
+		.allprojects {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		.project_info {
+			height: 450px;
+			width: 300px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			margin: 15px 0px;
+			background-color: #080813;
+			border-radius: 20px;
+			color: white;
+			border: 3px solid rgba(255, 255, 255, 0.5);
+		}
+
+		#ourprojects {
+			color: white;
+			text-align: center;
+			font-family: ubuntu-regular;
+			margin-top: 10px;
+		}
+	}
+
+	.project_about {
+		height: 350px;
+		width: 300px;
+	}
+
+	.logo {
+		width: 300px;
+		height: 300px;
+		border-radius: 20px 20px 0px 0px;
+	}
+
+	/* scroll */
+	::-webkit-scrollbar {
+		background-color: #1A1A1D;
+		width: 5px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #faac37;
+		border-radius: 5px;
+	}
+
+	.material-symbols {
+		font-family: 'Material Symbols Outlined';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 42px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+		color: white;
+	}
+
+	span {
+		animation: 1.5s alternate infinite linear;
+		animation-name: opacity;
+	}
+
+	@keyframes opacity {
+		0% {
+			opacity: 0.25;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 300px;
+		height: 75px;
+	}
+
+	footer {
+		background-color: #141416;
+		display: flex;
+		align-items: center;
+		height: 200px;
+		border-top: black 1px solid;
+	}
+</style>
+
+<body>
+	<header
+		style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%; background-color: rgba(0, 0, 0, 0.75);">
+		<div style="display: flex; align-items: center; justify-content: center;">
+			<h1 class="name">rizobyte ai</h1>
+		</div>
+		<div
+			style="z-index: 1; position: absolute; display: flex; justify-content: center; align-items: flex-end; width: 100%; height: 100%;">
+			<span class="material-symbols">
+				expand_more
+			</span>
+		</div>
+	</header>
+
+	<main>
+		<div>
+			<h3 id="ourprojects">---</h3>
+			<div class="allprojects">
+				<div class="project_info">
+					<div class="project_about">
+						<img class="logo" src="img/anonoya.png">
+						<h2 style="font-family: JetBrainsMono-Bold;">An Onoya Lora</h2>
+					</div>
+					<div class="links">
+						<a href="https://civitai.com/models/288133/an-onoya-relife" target="_blank">civitai</a>
+						<a href="https://huggingface.co/qnezor/an_onoya" target="_blank">huggingface</a>
+					</div>
+				</div>
+				<div class="project_info">
+					<div class="project_about">
+						<img class="logo" src="img/zemen.png">
+						<h2 style="font-family: JetBrainsMono-Bold;">Zemen RVC</h2>
+					</div>
+					<div class="links">
+						<a href="https://huggingface.co/qnezor/zemen-rvc" target="_blank">huggingface</a>
+					</div>
+				</div>
+				<div class="project_info">
+					<div class="project_about">
+						<div
+							style="display: flex; justify-content: center; align-items: center; width: 300px; height: 300px; font-family: OpenSans-Light;">
+							<h1 style="font-size: 100px;">?</h1>
+						</div>
+						<h2 style="font-family: JetBrainsMono-Bold;">Cheeseshelf Lora</h2>
+					</div>
+					<div class="links">
+						<a>not found</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div style="padding: 5px; display: flex; align-items: center; justify-content: space-between; width: 100%;">
+			<a href="https://rizobyte.github.io" style="display: flex; align-items: center;" target="_blank">
+				<img src="img/rizobyte.png" style="height: 120px; width: 120px;">
+				<h3 style="font-family: pixelifysans-regular; color: white;">rizobyte</h3>
+			</a>
+			<div style="display: flex; justify-content: center; flex-direction: column; text-align: right;">
+				<a href="https://huggingface.co/rizobyte" target="_blank">huggingface</a>
+				<a href="https://github.com/rizobyte" target="_blank">github</a>
+				<a href="https://ovk.to/rizobyte" target="_blank">openvk</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script>
+	let language = window.navigator.language;
+	let languageFistTwo = language.substr(0, 2);
+	ourprojects = document.getElementById('ourprojects');
+
+	switch (languageFistTwo) {
+		case "ru":
+			ourprojects.textContent = "мы участвовали в создании";
+			break;
+		default:
+			ourprojects.textContent = "we've been involved in the creation";
+			break;
+	} 
+</script>
+
+</html>
